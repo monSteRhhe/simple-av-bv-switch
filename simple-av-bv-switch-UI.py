@@ -1,8 +1,18 @@
+#!/usr/bin/python3
+# -*- coding:utf-8 -*-
+
+# ver ui-0.4
+
 from tkinter import *
 
 root = Tk()
 root.title("av-bv Switch")
-root.resizable(width=True, height=True)
+width = 400
+height = 100
+screenwidth = root.winfo_screenwidth()
+screenheight = root.winfo_screenheight()
+size = '%dx%d+%d+%d' % (width, height, (screenwidth - width)/2, (screenheight - height)/2)
+root.geometry(size)
 
 Label(root, text= "输入：").grid(row=0, column=0)
 Label(root, text= "输出：").grid(row=1, column=0)
