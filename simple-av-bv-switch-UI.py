@@ -49,16 +49,21 @@ def vswitch():
         else:
             outbox.insert(INSERT, getjson['data']['bvid'])
     else:
-        print("稿件不可见。")
+       outbox.insert(INSERT, "稿件不可见。")
 
 def clear():
     inbox.delete(0, END)
     outbox.delete('1.0', END)
+
+def touchmain(self):
+    vswitch()
 
 btn = Button(root, text = "转换", width = 10, command = vswitch)
 btn.grid(row = 3 ,column = 0, padx=10, pady =5)
 
 delbtn = Button(root, text = "清除", width = 8, command = clear)
 delbtn.grid(row = 0, column = 2, padx=10, pady =5)
+
+root.bind('<Return>', touchmain)
 
 root.mainloop()
