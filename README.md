@@ -7,7 +7,9 @@ exe是直接拿 *pyinstaller* 打包的
 
 ---
 
-### >Update Log
+### # Update Log
+
+v0.7 -  删了一句没用的代码
 
 v0.6 -  修改，添加了`复制`的按钮和操作后的提示
 

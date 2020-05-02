@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
 
-# ver ui-0.6
+# ver ui-0.7
 
 from tkinter import *
 import pyperclip
@@ -21,8 +21,7 @@ root.geometry(size)
 Label(root, text= '输入：').grid(row=0, column=0)
 Label(root, text= '输出：').grid(row=1, column=0)
 
-getin = StringVar()
-inbox = Entry(root, textvariable=getin, width = 30)
+inbox = Entry(root, width = 30)
 outbox = Text(root, height = 1, width = 30)
 inbox.grid(row=0, column=1)
 outbox.grid(row=1, column=1)
