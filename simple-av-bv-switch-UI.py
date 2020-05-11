@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
 
-# ver ui-0.7
+# ver ui-0.8
 
 from tkinter import *
-import pyperclip
+import pyperclip, json, re
 from urllib import request
-import json
-import re
 
 root = Tk()
 root.title('av-bv Switch')
@@ -29,8 +27,7 @@ outbox.grid(row=1, column=1)
 mestr = StringVar()
 mestr.set('输入时省略“av”和“BV”')
 
-anno = Label(root, textvariable = mestr)
-anno.grid(row =3 ,column =1)
+Label(root, textvariable = mestr).grid(row =3 ,column =1)
 
 def charcheck(stri):
     return bool(re.search('[a-z]', stri))
