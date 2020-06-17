@@ -5,7 +5,7 @@ Python小练手，大佬勿喷。
 
 exe是直接拿 *pyinstaller* 打包的。
 
-界面：
+朴实无华的界面：
 
 ![demo](https://cdn.jsdelivr.net/gh/monSteRhhe/simple-av-bv-switch/demo.png)
 
