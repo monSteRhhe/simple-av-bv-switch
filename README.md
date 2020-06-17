@@ -1,13 +1,19 @@
 # simple av-bv switch
-这是一个很简单的B站 **av-bv号** 转换器
+这是一个很简单的B站 **av-bv号** 转换器。
 
-Py练手，大佬勿喷
+Python小练手，大佬勿喷。
 
-exe是直接拿 *pyinstaller* 打包的
+exe是直接拿 *pyinstaller* 打包的。
+
+界面：
+
+![demo](https://cdn.jsdelivr.net/gh/monSteRhhe/simple-av-bv-switch/demo.png)
 
 ---
 
-### # Update Log
+### Update Log
+
+v0.9 -  固定窗口大小
 
 v0.8 -  稍微简化了一点点
 
@@ -19,7 +25,7 @@ v0.5 -  改动，绑定Enter键转换
 
 v0.4 -  没什么大改动
 
-v0.3 -  整了个UI，再次改动
+v0.3 -  整了个GUI，再次改动
 
 v0.2 -  一些小改动
 
